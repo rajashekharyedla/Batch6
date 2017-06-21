@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Wavelabs Console</title>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/startmin.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/startmin.css" rel="stylesheet">
+    <link href="css/morris.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navigation -->
+        <nav class="row navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a href="#"><img class="logo img-responsive" src="images/logo.jpg"></a>
+            </div>
+            <ul class="nav navbar-right navbar-top-links">
+                <a href="docs/docs.html" class="header-links">Docs</a>
+                <a href="" class="header-links">Catalog</a>
+                <a href="login/console-login.html"><button class="btn header-links header-buttons">Login</button></a>
+                <a href="login/console-register.html"><button class="btn header-links header-buttons">Signup</button></a>
+            </ul>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- Sidebar -->
+            <div class="sidebar collapse navbar-collapse col-xs-6 pull-right" id="myNavbar">
+                <div class="sidebar-nav">
+                    <ul class="nav" id="side-menu">
+                        <li><div class="categories">All Categories</div></li>
+                        <li>
+                            <a href="#">Infrastructure<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Compute</a>
+                                </li>
+                                <li>
+                                    <a href="#">Network</a>
+                                </li>
+                                <li>
+                                    <a href="#">Storage</a>
+                                </li>
+                                <li>
+                                    <a href="#">Security</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Apps<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Boilerplates</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cloud Foundry Apps</a>
+                                </li>
+                                <li>
+                                    <a href="#">Containers</a>
+                                </li>
+                                <li>
+                                    <a href="#">OpenWhisk</a>
+                                </li>
+                                <li>
+                                    <a href="#">Mobile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Services<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Data & Analytics</a>
+                                </li>
+                                <li>
+                                    <a href="#">Watson</a>
+                                </li>
+                                <li>
+                                    <a href="#">Internet of things</a>
+                                </li>
+                                <li>
+                                    <a href="#">API's</a>
+                                </li>
+                                <li>
+                                    <a href="#">Network</a>
+                                </li>
+                                <li>
+                                    <a href="#">Storage</a>
+                                </li>
+                                <li>
+                                    <a href="#">Security</a>
+                                </li>
+                                <li>
+                                    <a href="#">DevOps</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="page-content">
+                <div class="row pull-right">
+                    <div class="col-md-12">
+                        <div class="search">
+                            <input type="text" class="form-control input-sm" maxlength="64" placeholder="Filter" />
+                            <button type="submit" class="btn btn-primary btn-sm search-btn">Filter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="infrastructure col-md-12">
+                    <h3 class="content-headings">Infrastructure</h3>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                </div>
+                <div class="infrastructure col-md-12">
+                    <h3 class="content-headings">Apps</h3>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                </div>
+                <div class="infrastructure col-md-12">
+                    <h3 class="content-headings">Services</h3>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                    <a class="col-md-4 category-content" href="">
+                        <div class="category-contents">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-3">
+                                    <img class="content-logo" src="images/logo.jpg">
+                                </div>
+                                <div class="col-md-9 col-xs-9 pull-right">
+                                    <h5>Apache Spark</h5>
+                                    <p>Analytics for Apache spark for Bluemix</p>                            
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="badges"> 
+                                    <span class="badge">Wavelabs</span>
+                                </div>
+                            </div>
+                        </div>    
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

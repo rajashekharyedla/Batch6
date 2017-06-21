@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Wavelabs Console Login</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/metisMenu.min.js"></script>
+    <script src="js/startmin.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/metisMenu.min.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <link href="css/morris.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="row navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <a href="#"><img class="logo img-responsive" src="logo.jpg"></a>
+            </div>
+            <ul class="nav navbar-right navbar-top-links">
+                <a href="" class="header-links">Docs</a>
+                <a href="" class="header-links">Catalog</a>
+                <button class="btn header-links header-buttons">Login</button>
+                <button class="btn header-links header-buttons">Signup</button>
+            </ul>
+        </nav>
+        <div id="page-wrapper">
+            <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+                    <form role="form" name="regForm">
+                        <fieldset>
+                            <h3>Please Sign In:</h3>
+                            <hr class="colorgraph">
+                            <div class="form-group">
+                                <input type="text" name="uname" class="form-control input-md" placeholder="Enter your Username">
+                                <span ng-show="regForm.uname.$touched && regForm.uname.$invalid"><small style="color:red; display:block; text-align:center;">Enter a valid username</small></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" class="form-control input-md" placeholder="Enter Your Password" minlength=8>
+                                <span ng-show="regForm.password.$touched && regForm.password.$invalid"><small style="color:red; display:block; text-align:center;">Enter a valid password</small></span>
+                            </div>
+                            <span class="button-checkbox">
+                                <a href="" class="btn btn-link pull-right">Forgot Password?</a>
+                            </span>
+                            <div class="col-xs-3 col-sm-3 col-md-3">
+                                <button class="btn btn-md btn-success">Login</button>
+                            </div>
+                            <hr class="col-md-11 col-xs-11 colorgraph"><br>
+                            <h3>Login with:</h3>
+                            <div class="row social-logins">
+                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                    <button class="btn btn-md btn-primary">Facebook</button>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                    <button class="btn btn-md btn-danger">Google  +</button>
+                                </div>
+                                <div class="col-xs-4 col-sm-4 col-md-4">
+                                    <button class="btn btn-md btn-info">LinkedIn</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+            </div> 
+        </div>
+    </div>           
+</body>
+</html>
+
