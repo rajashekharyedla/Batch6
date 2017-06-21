@@ -2,7 +2,7 @@ apache:
     image: rajashekhary/batch6
     restart: always
     ports:
-        - 80:80
+        - 85:85
     volumes:
         - .:/var/www/html/project
         - ./deploy/apache/dev.conf:/etc/apache2/sites-enabled/001-project.conf
